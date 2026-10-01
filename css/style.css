@@ -1,0 +1,228 @@
+@import url("./fonts.css");
+
+:root {
+    /* Primary */
+
+    --Green-500: hsl(171, 66%, 44%);
+    --Blue-100: hsl(233, 100%, 69%);
+
+    /* Neutral */
+
+    --Gray-700: hsl(210, 10%, 33%);
+    --Gray-500: hsl(201, 11%, 66%);
+
+    font-family: "BaiJamjuree", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h1, h2, h3 {
+    font-weight: 600;
+    color: var(--Gray-700);
+}
+p,a {
+    color: var(--Gray-500);
+    font-size: 0.9rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+body {
+    gap: 0;
+}
+.container {
+    width: 100%;
+    gap: 2rem;
+}
+.content {
+    gap: 1rem;
+}
+section {
+    padding: 2rem;
+    text-align: center;
+}
+/* Start Header */
+header {
+    width: 100%;
+    background: url("../assets/images/bg-header-mobile.png") no-repeat;
+    background-size: cover;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+header img {
+    width: 100px;
+}
+.button-box {
+    gap: 1rem;
+}
+.button-box button {
+    border: none;
+    color: white;
+    width: 250px;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.ios {
+    background-color: var(--Green-500);
+    box-shadow: 0 3px 0 hsl(171, 66%, 30%);
+}
+.mac {
+    background-color: var(--Blue-100);
+    box-shadow: 0 3px 0 hsl(233, 100%, 60%);
+}
+.ios:hover,
+.ios:focus {
+    background-color: hsl(171, 66%, 50%);
+}
+.mac:hover,
+.mac:focus {
+    background-color: hsl(233, 100%, 80%);
+}
+/* End Header */
+
+
+/* Start snippets */
+.snippet-features {
+    padding: 0 3rem;
+    text-align: center;
+    gap: 1rem;
+}
+/* End snippets */
+
+/* Start Feature-box */
+
+.feature-box img {
+    width: 100%;
+}
+/* End Feature-box */
+
+
+/* Start Access */
+.access img {
+    width: 100%;
+}
+/* End Access */
+
+
+/* Start Workflow */
+/* End Workflow */
+
+/* Start Applications */
+.app img {
+    width: 48px;
+}
+/* End Applications */
+
+/* Start Customers */
+.customers img {
+    width: 120px;
+}
+/* End Customers */
+
+/* Start Footer */
+.container footer {
+    background-color: hsl(201, 11%, 90%);
+    width: 100%;
+    padding: 2rem 5rem;
+}
+.container footer .logo {
+    width: 48px;
+}
+.container footer ul {
+    list-style: none;
+}
+.container footer .social-links {
+    flex-direction: row;
+}
+.container footer .social-links a:hover svg path {
+    fill: var(--Green-500);
+}
+.container footer ul li a {
+    color: var(--Gray-700);
+    text-decoration: none;
+}
+.container footer .website-links li a:hover {
+    color: var(--Green-500);
+}
+.mylinks {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* End Footer */
+
+
+@media screen and (min-width: 750px) {
+    header {
+        background-image: url("../assets/images/bg-header-desktop.png");
+        padding: 3rem 10rem;
+    }
+    .content {
+        width: 60%;
+    }
+    .row-flex {
+        flex-direction: row;
+    }
+    .snippet-features {
+        padding: 0;
+    }
+    .feature-box {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 5rem;
+        text-align: start;
+    }
+    .feature-box img {
+        width: 50%;
+    }
+    .feature-container {
+        width: 30%;
+        align-items: flex-start;
+    }
+    .feature {
+        width: 100%;
+        align-items: flex-start;
+    }
+    .access {
+        width: 70%;
+    }
+    .access img {
+        width: 100%;
+    }
+    .applications {
+        width: 80%;
+    }
+    .container footer {
+        padding: 5% 10%;
+        flex-flow: row wrap;
+    }
+    .container footer > a,
+    .container footer .social-links {
+        width: 10%;
+    }
+    .container footer .website-links {
+        width: 60%;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 5%;
+    }
+    .container footer .website-links li {
+        width: 30%;
+        padding: 3%;
+    }
+}
