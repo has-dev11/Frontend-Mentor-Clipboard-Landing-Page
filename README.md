@@ -11,12 +11,6 @@ This is a solution to the [Clipboard Landing Page challenge on Frontend Mentor](
 
 ---
 
-## 📸 Preview
-
-![Clipboard Landing Page Screenshot](./screenshot.png) <!-- Replace with your screenshot path if available -->
-
----
-
 ## ✨ Features
 
 - **Responsive Layout:** Optimized interface tailored for mobile, tablet, and desktop viewports.
